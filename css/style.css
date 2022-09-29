@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    /*margin: 0;*/
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: rgb(237, 233, 233);
+}
+.row{
+    margin: 0;
+
+}
+
+article{
+ border: 2px rgb(20, 15, 19) solid;
+background-color: rgb(163, 164, 164);
+padding: 1rem;
+}
+div{
+    display: block;
+    justify-content: space-between;
+    gap: 6%;
+    margin-bottom: 1rem;
+    
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.5rem;
+}
+
+.meny{
+    border-right: 2px rgb(79, 76, 76) solid;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(14, 11, 11);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color .5s;
+}
+
+a:hover{
+    color: #cc1313;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.con{
+    height: 100vh;
+}
+
+.text-center{
+    text-align: center;
+    background-color: rgb(216, 212, 212);
+    background: fixed;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.card{
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    flex-basis: 80%;
+    border-radius: 20px; /*resmin cerceve kenari*/
+}
+.card2{
+    flex-wrap: block;
+}
+
+.card>p{
+
+    font-size: 2rem;
+    padding: 1rem; /*buttun icin*/
+}
+button{
+    display: block;
+    font-size: 1.2em;
+    padding: .5em;
+    border-radius: 20px;
+    margin: 0 1em 1em auto;
+}
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin: 2.5rem;
+
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* för footern så att den alltid är längst ner */
+  body{
+    /*display: flex;*/
+    flex-flow: column nowrap;
+    min-height: 100vh;
+  }
+
+  footer{
+    border: 1px rgb(12, 12, 12) solid;
+    margin-top: auto;
+  }
+
+
+
+@media screen and (min-width: 500px){
+    .card{
+        flex-basis: calc( (100% - 1rem) /2 );
+    }
+    
+}
+@media screen and (min-width: 820px){
+    .card{
+        flex-basis: calc( (80% - 2rem) /3 );
+    }
+}
+
+
+
